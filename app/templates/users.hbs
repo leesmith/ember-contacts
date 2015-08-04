@@ -1,0 +1,7 @@
+<ul>
+  {{#each model as |user|}}
+    <li>{{#link-to 'users.show' user}} {{user.firstName}} {{user.lastName}} {{/link-to}} <span>{{#link-to 'users.edit' user }}Edit {{/link-to}}</span></li>
+  {{/each}}
+</ul>
+
+{{outlet}}
